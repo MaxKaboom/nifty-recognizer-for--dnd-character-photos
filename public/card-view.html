@@ -7,7 +7,7 @@ var socket = io.connect('',{transports: ['websocket']});
     
 socket.on('card_image',function(msg){
 	if(msg.src == 'clear'){
-		$('#display').show().attr('src','http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=0&type=card');
+		$('#display').show().attr('src','https://image.shutterstock.com/image-vector/iconic-tattoo-style-image-d20-260nw-1651312534.jpg');
 		$('#displayOverride').hide();
 	}
 	else if (msg.src == 'overrideStop') {
